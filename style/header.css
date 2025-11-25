@@ -14,9 +14,10 @@ header {
   .navegacao ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
 
     a {
       display: block;
@@ -24,7 +25,7 @@ header {
       font-size: 1.5rem;
       font-weight: bold;
       border-bottom: 3px dashed transparent;
-      padding: 5px 20px;
+      margin: 5px 20px;
 
       &:hover {
         border-bottom: 3px dashed var(--color-details);
