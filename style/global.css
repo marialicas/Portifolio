@@ -1,0 +1,46 @@
+:root {
+  --color-primary: #dfd8c5;
+  --color-secondary: #304687;
+  --color-details: #c9960a;
+  --color-card: #d2c39c;
+
+  --color-font-primary: #57440f;
+  --color-font-secondary: #eaead7;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary);
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0;
+  gap: 40px;
+  color: var(--color-secondary);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
