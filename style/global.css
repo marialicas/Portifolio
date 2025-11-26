@@ -18,6 +18,11 @@ body {
   color: var(--color-secondary);
 }
 
+h1 {
+  font-family: "Playfair", serif;
+  font-size: 8rem;
+}
+
 h1,
 h2,
 h3,
