@@ -18,7 +18,7 @@
     text-align: center;
   }
 }
-.card {
+.experiencia-card {
   display: flex;
   flex-direction: column;
   width: 360px;
