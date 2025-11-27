@@ -1,6 +1,6 @@
 .introducao {
   display: grid;
-  max-width: 1140px;
+  max-width: 1150px;
   justify-content: space-between;
   grid-template-columns: 1fr 0.5fr 1fr;
   align-items: center;
@@ -23,7 +23,7 @@
     display: block;
     max-width: 25rem;
     object-fit: cover;
-    justify-self: center;
+    justify-self: flex-end;
     grid-column: 3;
   }
 
@@ -56,6 +56,7 @@
     img {
       grid-row: 3;
       grid-column: auto;
+      justify-self: center;
     }
 
     &::before {

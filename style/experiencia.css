@@ -1,10 +1,13 @@
 #experiencia {
-  display: flex;
-  padding: 10px 142px 20px 50px;
-  justify-content: space-between;
   background: var(--color-secondary);
-  color: var(--color-primary);
-  align-items: center;
+
+  .conteudo {
+    display: flex;
+    color: var(--color-primary);
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+  }
 
   h1 {
     display: flex;
@@ -76,9 +79,10 @@
 
 @media (max-width: 800px) {
   #experiencia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    .conteudo {
+      flex-direction: column;
+      gap: 20px;
+    }
 
     h1 {
       display: block;
@@ -91,7 +95,19 @@
     }
 
     .card {
-      height: 100%;
+      height: 160px;
+      width: 100%;
     }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  #experiencia {
+    gap: 20px;
+    padding: 20px 40px;
   }
 }
