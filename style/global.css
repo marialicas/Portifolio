@@ -22,6 +22,8 @@ body {
 h1 {
   font-family: "Playfair", serif;
   font-size: 7rem;
+  line-height: 1;
+  letter-spacing: 0.5rem;
 }
 
 h1,
