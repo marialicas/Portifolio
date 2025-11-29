@@ -22,46 +22,37 @@
 }
 
 .projetos-card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 16px;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
   max-width: 360px;
-  height: 100%;
   gap: 20px;
-
-  .projetos-body {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+  align-items: start;
 
   img {
     outline: 2px dashed var(--color-primary);
     height: 252px;
+    width: 100%;
     object-fit: cover;
     border-radius: 1rem;
   }
 
-  .card-info {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    h2 {
-      font-size: 2rem;
-      line-height: 1.2;
-    }
+  h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
 
-    p {
-      font-size: 1.25rem;
-      color: rgba(234, 234, 215, 0.7);
-    }
+  p {
+    font-size: 1.25rem;
+    color: rgba(234, 234, 215, 0.7);
   }
 
   .cargo-data {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
+    align-self: end;
 
     p {
       font-size: 1rem;
@@ -76,11 +67,20 @@
   }
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 1210px) {
+  .projetos-card {
+    display: grid;
+    grid-template-rows: 1fr 1.1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
   #projetos {
     .conteudo {
-      flex-direction: column;
+      flex-direction: column-reverse;
       gap: 20px;
+      padding: 10px 20px;
     }
 
     h1 {
@@ -94,24 +94,24 @@
     }
 
     .projetos-card {
-      height: 160px;
-      width: 100%;
-    }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      max-width: 650px;
+      align-items: center;
 
-    img {
-      width: 100%;
-    }
+      img {
+        max-height: 200px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
-    .info {
-      width: calc(100% - 30px);
-      padding: 15px;
+        h2 {
+          align-self: center;
+        }
+      }
     }
   }
 }
-
-@media (max-width: 1500px) {
-  #projetos {
-    gap: 20px;
-    padding: 20px 40px;
-  }
-} */
