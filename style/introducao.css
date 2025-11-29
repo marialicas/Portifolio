@@ -6,36 +6,35 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 20px;
+}
 
-  .info {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1;
-    gap: 20px;
+.introducao-info {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  gap: 20px;
+}
+.introducao-info p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
 
-    p {
-      font-size: 2rem;
-      line-height: 3rem;
-    }
-  }
+.introducao img {
+  display: block;
+  max-width: 25rem;
+  object-fit: cover;
+  justify-self: flex-end;
+  grid-column: 3;
+}
 
-  img {
-    display: block;
-    max-width: 25rem;
-    object-fit: cover;
-    justify-self: flex-end;
-    grid-column: 3;
-  }
-
-  &::before {
-    grid-row: 1;
-    content: "";
-    height: 100%;
-    display: block;
-    grid-column: 2;
-    justify-self: center;
-    border-left: 3px dashed var(--color-secondary);
-  }
+.introducao::before {
+  grid-row: 1;
+  content: "";
+  height: 100%;
+  display: block;
+  grid-column: 2;
+  justify-self: center;
+  border-left: 3px dashed var(--color-secondary);
 }
 
 @media (max-width: 800px) {
@@ -43,31 +42,31 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
     gap: 3rem;
+  }
 
-    &::before {
-      display: none;
-    }
+  .introducao::before {
+    display: none;
+  }
 
-    .info {
-      grid-column: auto;
-      grid-row: 1;
-    }
+  .introducao-info {
+    grid-column: auto;
+    grid-row: 1;
+  }
 
-    img {
-      grid-row: 3;
-      grid-column: auto;
-      justify-self: center;
-    }
+  .introducao img {
+    grid-row: 3;
+    grid-column: auto;
+    justify-self: center;
+  }
 
-    &::before {
-      display: block;
-      content: "";
-      height: 0;
-      width: 100%;
-      grid-column: auto;
-      grid-row: 2;
-      border-bottom: 3px dashed var(--color-secondary);
-      justify-self: center;
-    }
+  .introducao::before {
+    display: block;
+    content: "";
+    height: 0;
+    width: 100%;
+    grid-column: auto;
+    grid-row: 2;
+    border-bottom: 3px dashed var(--color-secondary);
+    justify-self: center;
   }
 }

@@ -1,0 +1,77 @@
+#contato {
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 0 20px 40px 20px;
+}
+
+.contatos-container {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.contatos-container h1 {
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 5ch;
+  grid-column: 1;
+}
+
+.contatos-container h1::after {
+  display: block;
+  content: "";
+  border-right: 2px dashed var(--color-secondary);
+  width: 2px;
+  height: 100%;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.contatos-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 20px;
+  grid-column: 3;
+  padding: 0 0 0 120px;
+}
+
+.contato-pessoal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contato-redes {
+  display: flex;
+  gap: 15px;
+}
+.contato-redes img {
+  min-height: 10px;
+  min-width: 10px;
+}
+.direitos {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-font-primary);
+}
+
+@media (max-width: 800px) {
+  .contatos-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contatos-container h1 {
+    word-break: normal;
+    font-size: 4rem;
+    max-width: 100%;
+  }
+
+  .contatos-info {
+    padding: 0;
+  }
+}

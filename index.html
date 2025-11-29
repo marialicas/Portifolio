@@ -3,8 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Desenvolvedor Front-End, localizado em Pato Branco"
+    />
     <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/style.mim.css" />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/assets/perfil.webp"
+      type="image/webp"
+    />
     <title>Marialicas Dev</title>
   </head>
   <body>
@@ -23,7 +40,7 @@
     </header>
 
     <main class="introducao">
-      <div class="info">
+      <div class="introducao-info">
         <p>
           Olá, eu me chamo <b>Alice Gomes</b>, sou estudante de Engenharia de
           Computação, e atuo na área de Front-end.
@@ -33,15 +50,25 @@
           e experiências. Sinta-se à vontade para explorar!
         </p>
       </div>
-      <img src="/assets/perfil.webp" alt="perfil" />
+      <img
+        src="/assets/perfil.webp"
+        alt="perfil"
+        width="406.5"
+        height="490.5"
+      />
     </main>
 
-    <section id="experiencia">
-      <div class="conteudo">
+    <section id="experiencia" aria-label="experiencia">
+      <div class="conteudo-experiencia">
         <h1>Experiência</h1>
         <div class="experiencia-card">
-          <img src="/assets/site-links.png" alt="site-links" />
-          <div class="info">
+          <img
+            src="/assets/site-links.webp"
+            alt="site-links"
+            width="500"
+            height="600"
+          />
+          <div class="experiencia-info">
             <h2>Site de Links</h2>
             <ul>
               <li>HTML</li>
@@ -51,8 +78,13 @@
           </div>
         </div>
         <div class="experiencia-card">
-          <img src="/assets/amigo-secreto.png" alt="amigo-secreto" />
-          <div class="info">
+          <img
+            src="/assets/amigo-secreto.webp"
+            alt="amigo-secreto"
+            height="414.5"
+            width="500"
+          />
+          <div class="experiencia-info">
             <h2>Amigo Secreto</h2>
             <ul>
               <li>HTML</li>
@@ -63,8 +95,13 @@
           </div>
         </div>
         <div class="experiencia-card">
-          <img src="/assets/curriculo.png" alt="curriculo" />
-          <div class="info">
+          <img
+            src="/assets/curriculo.webp"
+            alt="curriculo"
+            width="400"
+            height="400"
+          />
+          <div class="experiencia-info">
             <h2>Curriculo</h2>
             <ul>
               <li>HTML</li>
@@ -79,41 +116,46 @@
     <section id="formacao">
       <h1 class="formacao-titulo">Formação</h1>
       <div class="formacao-card">
-        <h3>Ensino Médio Integrado ao Técnico em Administração</h3>
+        <h2>Ensino Médio Integrado ao Técnico em Administração</h2>
         <p>ETEC de Itanhaém</p>
         <p>2018 - 2020</p>
       </div>
       <div class="formacao-card">
-        <h3>Engenharia de Computação</h3>
+        <h2>Engenharia de Computação</h2>
         <p>Universidade Tecnologica Federal do Paraná</p>
         <p>2022 - 2027</p>
       </div>
     </section>
 
-    <section id="formacao-cursos">
+    <section id="formacao-cursos" aria-label="formacao">
       <div class="formacao-card">
-        <h3>Iniciante em Programação</h3>
+        <h2>Iniciante em Programação</h2>
         <p>Alura</p>
         <p>70h - 2025</p>
       </div>
       <div class="formacao-card">
-        <h3>HTML e CSS para Iniciantes</h3>
+        <h2>HTML e CSS para Iniciantes</h2>
         <p>Origamid</p>
         <p>46h - 2025</p>
       </div>
       <div class="formacao-card">
-        <h3>UI Desing para Iniciantes</h3>
+        <h2>UI Desing para Iniciantes</h2>
         <p>Origamid</p>
         <p>34h - 2025</p>
       </div>
       <h1 class="formacao-titulo">Cursos</h1>
     </section>
 
-    <section id="projetos">
-      <div class="conteudo">
+    <section id="projetos" aria-label="projetos">
+      <div class="conteudo-projetos">
         <div class="projetos-card">
-          <img src="/assets/ativide-libras.webp" alt="atividade-libras" />
-          <div class="info">
+          <img
+            src="/assets/ativide-libras.webp"
+            alt="atividade-libras"
+            width="300"
+            height="300"
+          />
+          <div class="projetos-info">
             <h2>Material Bilíngue Todos</h2>
             <p>
               Projeto voltado para a criação de materiais didáticos para
@@ -127,8 +169,13 @@
         </div>
 
         <div class="projetos-card">
-          <img src="/assets/logo-occam.webp" alt="logo-occam" />
-          <div class="info">
+          <img
+            src="/assets/logo-occam.webp"
+            alt="logo-occam"
+            width="300"
+            height="200"
+          />
+          <div class="projetos-info">
             <h2>OCCAM Engenharia</h2>
             <p>
               Empresa Junior da Universidade, focado em trazer experiências de
@@ -142,8 +189,13 @@
         </div>
 
         <div class="projetos-card">
-          <img src="/assets/garotas.webp" alt="garotas" />
-          <div class="info">
+          <img
+            src="/assets/garotas.webp"
+            alt="garotas"
+            width="300"
+            height="200"
+          />
+          <div class="projetos-info">
             <h2>The Girls Has No Name</h2>
             <p>
               Projeto voltado para incentivar a entrada de meninas nas áreas de
@@ -157,58 +209,30 @@
         </div>
         <h1>Projetos</h1>
       </div>
-      <!-- <section id="projetos">
-      <div class="conteudo">
-        <div class="projetos-card">
-          <img src="/assets/ativide-libras.webp" alt="atividade-libras" />
-          <div class="projetos-body">
-            <div class="card-info">
-              <h2>Material Bilíngue Todos</h2>
-              <p>
-                Projeto voltado para a criação de materiais didáticos para
-                aplicação na escola bilíngue de libras
-              </p>
-            </div>
-            <div class="cargo-data">
-              <p>Designer</p>
-              <p class="card-data">2024 - atualmente</p>
-            </div>
-          </div>
-        </div>
-        <div class="projetos-card">
-          <img src="/assets/logo-occam.webp" alt="logo-occam" />
-          <div class="projetos-body">
-            <div class="card-info">
-              <h2>OCCAM Engenharia</h2>
-              <p>
-                Empresa Junior da Universidade, focado em trazer experiências de
-                trabalho para os membros
-              </p>
-            </div>
-            <div class="cargo-data">
-              <p>Desenvolvedora Front-End</p>
-              <p class="card-data">2025 - atualmente</p>
-            </div>
-          </div>
-        </div>
-        <div class="projetos-card">
-          <img src="/assets/garotas.webp" alt="garotas" />
-          <div class="projetos-body">
-            <div class="card-info">
-              <h2>The Girls Has No Name</h2>
-              <p>
-                Projeto voltado para incentivar a entrada de meninas nas áreas
-                de ciências exatas e engenharias
-              </p>
-            </div>
-            <div class="cargo-data">
-              <p>Bolsista do Projeto</p>
-              <p class="card-data">2024 - atualmente</p>
-            </div>
-          </div>
-        </div>
-        <h1>Projetos</h1>
-      </div> -->
     </section>
+
+    <footer id="contato">
+      <div class="contatos-container">
+        <h1>Contatos</h1>
+        <div class="contatos-info">
+          <p>
+            Estou disponivel para novos projetos, entre em contato para
+            marcarmos uma conversa.
+          </p>
+          <div class="contato-pessoal">
+            <a href="mailto:eialicag@gmail.com"><h2>eialicag@gmail.com</h2></a>
+            <div class="contato-redes">
+              <a href="https://github.com/marialicas/"
+                ><img src="./assets/Github-Logo.svg" alt="github"
+              /></a>
+              <a href="https://www.linkedin.com/in/marialicas/"
+                ><img src="./assets/Linkedin-Logo.svg" alt="Linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="direitos">Marialicas. Alguns direitos reservados.</p>
+    </footer>
   </body>
 </html>

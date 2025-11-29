@@ -6,14 +6,14 @@
   padding: 0 20px;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 20px;
+}
 
-  &::after {
-    content: "";
-    width: 100%;
-    border-bottom: 2px dashed var(--color-secondary);
-    grid-column: 1/-1;
-  }
+#formacao::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px dashed var(--color-secondary);
+  grid-column: 1/-1;
 }
 
 .formacao-titulo {
@@ -35,11 +35,11 @@
   border-radius: 16px;
   padding: 10px 20px;
   box-shadow: 0 2px 2px rgba(142, 97, 50, 0.7);
+}
 
-  p,
-  h3 {
-    font-size: 1.5rem;
-  }
+.formacao-card p,
+h2 {
+  font-size: 1.5rem;
 }
 
 #formacao-cursos {
@@ -51,6 +51,7 @@
   align-items: center;
   margin: 0 auto;
 }
+
 @media (max-width: 1150px) {
   .formacao-titulo {
     max-width: 190px;
