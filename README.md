@@ -1,6 +1,7 @@
 # Portifólio
 
 Um portfólio online desenvolvido com HTML e CSS, criado para apresentar projetos, habilidades e informações profissionais.
+
 **Figma:** https://www.figma.com/design/UWpullMKO9kb07BPZGsYzW/Portifolio?t=2KDFJl5lB7U88BHz-1
 
 ## 🚀 Tecnologias Utilizadas
